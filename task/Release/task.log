@@ -1,0 +1,14 @@
+﻿  NUCovering.cpp
+C:\Users\═рЄр\Desktop\IPS\task2\project\task\NUCovering.cpp(58): warning #3947: "_Cilk_for" has been deprecated, and will be removed in a future release.  Please refer to release notes for details and recommended alternatives
+    	cilk_for(int j = 0; j < 5; j++) {
+    	^
+  
+C:\Users\═рЄр\Desktop\IPS\task2\project\task\NUCovering.cpp(59): error : argument of type "cilk::reducer<cilk::op_vector<int, std::allocator<int>>> *" is incompatible with parameter of type "std::vector<int, std::allocator<int>> *"
+    		temporary_boxes_par = push(&temporary_boxes_par);
+    		                           ^
+  
+C:\Users\═рЄр\Desktop\IPS\task2\project\task\NUCovering.cpp(59): error #373: "cilk::reducer<Monoid> &cilk::reducer<Monoid>::operator=(const cilk::reducer<Monoid> &) [with Monoid=cilk::op_vector<int, std::allocator<int>>]" (declared at line 1127 of "C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019\windows\compiler\include\cilk/reducer.h") is inaccessible
+    		temporary_boxes_par = push(&temporary_boxes_par);
+    		                    ^
+  
+  compilation aborted for NUCovering.cpp (code 2)

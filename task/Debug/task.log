@@ -1,0 +1,7 @@
+﻿  NUCovering.cpp
+  fragmentation.cpp
+C:\Users\═рЄр\Desktop\IPS\task2\project\task\fragmentation.cpp(296): warning #3947: "_Cilk_for" has been deprecated, and will be removed in a future release.  Please refer to release notes for details and recommended alternatives
+    			cilk_for (int j = 0; j < node_size; j++) {
+    			^
+  
+  task.vcxproj -> C:\Users\Ната\Desktop\IPS\task2\project\task\Debug\Task.exe

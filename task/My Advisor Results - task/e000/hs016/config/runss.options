@@ -1,0 +1,14 @@
+-r
+C:\Users\Ната\Desktop\IPS\task2\project\task\My Advisor Results - task\e000\hs016
+--mrte-mode=auto
+--follow-child
+--return-app-exitcode
+--strategy=ld-linux.so.2:notrace:notrace,ld-linux-x86-64.so.2:notrace:notrace
+--interval=10
+--data-limit-mb=500
+--stack-stitching
+--stackwalk=offline
+--mrte-type=java,dotnet,python
+--type=cpu:stack
+--
+C:\Users\Ната\Desktop\IPS\task2\project\task\Release\Task.exe

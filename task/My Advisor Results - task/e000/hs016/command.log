@@ -1,0 +1,1 @@
+"C:\Program Files (x86)\IntelSWTools\Advisor 2019\bin64\advixe-cl" -collect survey -module-filter-mode=exclude -mrte-mode=auto -interval=10 -data-limit=500 -stackwalk-mode=offline -stack-stitching -mkl-user-mode -no-profile-python -no-support-multi-isa-binaries -no-spill-analysis -no-static-instruction-mix -auto-finalize -project-dir "C:\Users\

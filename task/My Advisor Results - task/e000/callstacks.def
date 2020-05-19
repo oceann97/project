@@ -1,0 +1,39 @@
+# callstacks file version: 5
+#    rowid	    parent	       rva	 loop	 system	                                function	binary	instance_start_rva	instance_size	instance_end_rva	finst_rowid	roi	is_inlined
+         1	        -1	     47593	    0	      0	                          mainCRTStartup	C:\Users\Ната\Desktop\IPS\task2\project\task\Release\Task.exe	47593	10	0	1	0	0
+         2	        -1	    424947	    0	      1	                         func@0x4b2e7bd9	C:\Windows\SysWOW64\ntdll.dll	424921	28	0	23	0	0
+         3	         2	    424995	    0	      1	                         func@0x4b2e7bf5	C:\Windows\SysWOW64\ntdll.dll	424949	52	0	24	0	0
+         4	         3	     90968	    0	      1	                     BaseThreadInitThunk	C:\Windows\SysWOW64\kernel32.dll	90944	58	0	19	0	0
+         5	         4	     47456	    0	      0	                   _scrt_common_main_seh	C:\Users\Ната\Desktop\IPS\task2\project\task\Release\Task.exe	47207	386	0	2	0	0
+         6	         5	      4369	    0	      0	                                    main	C:\Users\Ната\Desktop\IPS\task2\project\task\Release\Task.exe	4096	686	0	3	0	0
+         7	        33	      5398	    1	      0	[Loop at line 291 in high_level_analysis::GetSolution]	C:\Users\Ната\Desktop\IPS\task2\project\task\Release\Task.exe	5335	64	5345	4	0	0
+         8	         7	      7453	    0	      0	     low_level_fragmentation::GetBoxType	C:\Users\Ната\Desktop\IPS\task2\project\task\Release\Task.exe	7316	528	0	7	0	0
+         9	         8	     27238	    0	      0	          high_level_analysis::GetMinMax	C:\Users\Ната\Desktop\IPS\task2\project\task\Release\Task.exe	22860	4564	0	8	0	0
+        10	         9	     28290	    0	      0	std::vector<double,class std::allocator<double> >::push_back	C:\Users\Ната\Desktop\IPS\task2\project\task\Release\Task.exe	28248	48	0	9	0	0
+        11	        10	     28426	    0	      0	std::vector<double, std::allocator<double> >::emplace_back	C:\Users\Ната\Desktop\IPS\task2\project\task\Release\Task.exe	28296	144	0	10	0	0
+        12	        11	     28513	    0	      0	std::vector<double, std::allocator<double> >::_Emplace_reallocate	C:\Users\Ната\Desktop\IPS\task2\project\task\Release\Task.exe	28440	812	0	11	0	0
+        13	        12	      6197	    0	      0	std::_Vector_alloc<struct std::_Vec_base_types<struct Box,class std::allocator<struct Box> > >::_Myfirst	C:\Users\Ната\Desktop\IPS\task2\project\task\Release\Task.exe	6172	34	0	12	0	0
+        14	         8	     26791	    0	      0	          high_level_analysis::GetMinMax	C:\Users\Ната\Desktop\IPS\task2\project\task\Release\Task.exe	22860	4564	0	8	0	0
+        15	        14	     28290	    0	      0	std::vector<double,class std::allocator<double> >::push_back	C:\Users\Ната\Desktop\IPS\task2\project\task\Release\Task.exe	28248	48	0	9	0	0
+        16	        15	     28426	    0	      0	std::vector<double, std::allocator<double> >::emplace_back	C:\Users\Ната\Desktop\IPS\task2\project\task\Release\Task.exe	28296	144	0	10	0	0
+        17	        16	     29114	    0	      0	std::vector<double, std::allocator<double> >::_Emplace_reallocate	C:\Users\Ната\Desktop\IPS\task2\project\task\Release\Task.exe	28440	812	0	11	0	0
+        18	        17	     29852	    0	      0	std::vector<double,class std::allocator<double> >::_Change_array	C:\Users\Ната\Desktop\IPS\task2\project\task\Release\Task.exe	29824	262	0	13	0	0
+        19	        18	      6190	    0	      0	std::_Vector_alloc<struct std::_Vec_base_types<struct Box,class std::allocator<struct Box> > >::_Myfirst	C:\Users\Ната\Desktop\IPS\task2\project\task\Release\Task.exe	6172	34	0	12	0	0
+        20	        19	      5886	    0	      0	std::_String_alloc<struct std::_String_base_types<char,class std::allocator<char> > >::_Get_data	C:\Users\Ната\Desktop\IPS\task2\project\task\Release\Task.exe	5868	34	0	14	0	0
+        21	        20	      5907	    0	      0	std::_Compressed_pair<class std::allocator<double>,class std::_Vector_val<struct std::_Simple_types<double> >,1>::_Get_second	C:\Users\Ната\Desktop\IPS\task2\project\task\Release\Task.exe	5904	12	0	15	0	0
+        22	         5	      4684	    0	      0	                                    main	C:\Users\Ната\Desktop\IPS\task2\project\task\Release\Task.exe	4096	686	0	3	0	0
+        23	        35	     15017	    1	      0	      [Loop at line 346 in WriteResults]	C:\Users\Ната\Desktop\IPS\task2\project\task\Release\Task.exe	14742	663	15405	16	0	0
+        24	        23	     16773	    0	      0	                         std::operator<<	C:\Users\Ната\Desktop\IPS\task2\project\task\Release\Task.exe	15660	1804	0	18	0	0
+        25	        24	    250644	    0	      1	std::basic_streambuf<char,struct std::char_traits<char> >::sputn	C:\Windows\SysWOW64\msvcp140.dll	250608	39	0	27	0	0
+        26	         4	     47583	    0	      0	                   _scrt_common_main_seh	C:\Users\Ната\Desktop\IPS\task2\project\task\Release\Task.exe	47207	386	0	2	0	0
+        27	        26	    267344	    0	      1	                                    exit	C:\Windows\SysWOW64\ucrtbase.dll	267328	20	0	20	0	0
+        28	        27	    267717	    0	      1	                         func@0x100415be	C:\Windows\SysWOW64\ucrtbase.dll	267710	31	0	21	0	0
+        29	        28	    270701	    0	      1	                         func@0x1004213c	C:\Windows\SysWOW64\ucrtbase.dll	270652	89	0	22	0	0
+        30	        29	    169749	    0	      1	                         func@0x100296f1	C:\Windows\SysWOW64\ucrtbase.dll	169713	81	0	26	0	0
+        31	        30	    988928	    0	      1	                          LoadLibraryExW	C:\Windows\SysWOW64\KernelBase.dll	988928	374	0	25	0	0
+        32	         6	      5284	    0	      0	        high_level_analysis::GetSolution	C:\Users\Ната\Desktop\IPS\task2\project\task\Release\Task.exe	5096	680	0	5	0	0
+        33	        32	      5335	    1	      0	[Loop at line 288 in high_level_analysis::GetSolution]	C:\Users\Ната\Desktop\IPS\task2\project\task\Release\Task.exe	5284	488	5774,5772	6	0	0
+        34	         6	      5398	    0	      0	        high_level_analysis::GetSolution	C:\Users\Ната\Desktop\IPS\task2\project\task\Release\Task.exe	5096	680	0	5	0	0
+        35	        22	     14742	    0	      0	                            WriteResults	C:\Users\Ната\Desktop\IPS\task2\project\task\Release\Task.exe	12916	2654	0	17	0	0
+        36	        22	     15017	    0	      0	                            WriteResults	C:\Users\Ната\Desktop\IPS\task2\project\task\Release\Task.exe	12916	2654	0	17	0	0
+        37	        -1	         0	    0	      0	                [Unknown stack frame(s)]	n/a	0	1	0	29	0	0

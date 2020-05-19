@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1062
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Task", "task.vcxproj", "{9B9D3F25-7629-45B0-8046-12BAC57251FC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{68B55C4B-91FD-4E7A-9369-F7F52CCAF16C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9B9D3F25-7629-45B0-8046-12BAC57251FC}.Debug|x86.ActiveCfg = Debug|Win32
+		{9B9D3F25-7629-45B0-8046-12BAC57251FC}.Debug|x86.Build.0 = Debug|Win32
+		{9B9D3F25-7629-45B0-8046-12BAC57251FC}.Release|x86.ActiveCfg = Release|Win32
+		{9B9D3F25-7629-45B0-8046-12BAC57251FC}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {78D52728-7952-4263-A986-DA91C7EC1883}
+	EndGlobalSection
+EndGlobal

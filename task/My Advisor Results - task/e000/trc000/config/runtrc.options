@@ -1,0 +1,10 @@
+-r
+C:\Users\Ната\Desktop\IPS\task2\project\task\My Advisor Results - task\e000\trc000
+--return-app-exitcode
+--cs-mode=no-count-loops,no-count-flops,stack-stitching
+--count-flops
+--benchmarks=dram,mcdram,cpu_cache,flop_peak,int
+--cs-file=C:\Users\Ната\Desktop\IPS\task2\project\task\My Advisor Results - task\e000/callstacks.def
+--jit-profiling
+--
+C:\Users\Ната\Desktop\IPS\task2\project\task\Release\Task.exe

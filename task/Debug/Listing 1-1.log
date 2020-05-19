@@ -1,0 +1,6 @@
+﻿  task.cpp
+C:\Users\═рЄр\Desktop\IPS\task\Listing 1-1\task.cpp(44): warning #3947: "_Cilk_for" has been deprecated, and will be removed in a future release.  Please refer to release notes for details and recommended alternatives
+    		cilk_for(int i = 1; i < q[j] - 1; i++)
+    		^
+  
+  Listing 1-1.vcxproj -> C:\Users\Ната\Desktop\IPS\task\Debug\Task.exe

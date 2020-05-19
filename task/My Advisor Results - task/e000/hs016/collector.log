@@ -1,0 +1,13 @@
+Collection status has changed. 1
+Collection has been started.
+Collection has stopped. Application exit code:  0
+Finalizing results
+Finalizing the result
+Clearing the database
+The database has been cleared, elapsed time is 0.235 seconds.
+Loading raw data to the database
+Loading 'systemcollector-11280-DESKTOP-H601PET.sc' file
+Loading '17316-12768.0.trace' file
+Finalization may slow down when loading files from the symbol server specified in the project properties.
+Loading 'tripcounts_14112_0.tcs' file
+Error: Cannot load data file `C:\Users\
