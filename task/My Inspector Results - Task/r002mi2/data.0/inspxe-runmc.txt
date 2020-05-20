@@ -1,0 +1,61 @@
+
+=== Start: [2020/05/20 18:19:19] === 
+Analysis started...
+Result file: C:\Users\Ната\Desktop\IPS\task2\project\Новая папка\project\task\My Inspector Results - Task\r002mi2\r002mi2.inspxe 
+Analysis started for c:\users\����\desktop\ips\task2\project\����� �����\project\task\debug\task.exe (pid = 13224) 
+Loaded module: c:\users\Ната\desktop\ips\task2\project\Новая папка\project\task\debug\task.exe, address range [0xaf0000-0xb1afff] 
+Loaded module: c:\windows\syswow64\kernel32.dll, address range [0x755f0000-0x756cffff] 
+Loaded module: c:\windows\syswow64\kernelbase.dll, address range [0x75840000-0x75a3dfff] 
+Loaded module: c:\windows\syswow64\ntdll.dll, address range [0x77890000-0x77a29fff] 
+Loaded module: c:\windows\syswow64\msvcp140d.dll, address range [0xc0f0000-0xc1a6fff] 
+Loaded module: c:\windows\syswow64\vcruntime140d.dll, address range [0x7bc20000-0x7bc3cfff] 
+Unloaded module: C:\Windows\SysWOW64\msvcp140d.dll 
+Loaded module: c:\program files (x86)\intelswtools\compilers_and_libraries_2019.5.281\windows\redist\ia32_win\compiler\cilkrts20.dll, address range [0x7bbd0000-0x7bc17fff], minimal analysis 
+Loaded module: c:\program files (x86)\intelswtools\compilers_and_libraries_2019.5.281\windows\redist\ia32_win\compiler\libmmdd.dll, address range [0x7b750000-0x7bbcffff] 
+Loaded module: c:\windows\syswow64\ucrtbased.dll, address range [0x795e0000-0x79754fff] 
+Loaded module: c:\windows\syswow64\user32.dll, address range [0x763f0000-0x76586fff], minimal analysis 
+Loaded module: c:\windows\syswow64\win32u.dll, address range [0x76e00000-0x76e16fff] 
+Loaded module: c:\windows\syswow64\gdi32.dll, address range [0x75430000-0x75450fff] 
+Loaded module: c:\windows\syswow64\gdi32full.dll, address range [0x774f0000-0x77649fff], minimal analysis 
+Loaded module: c:\windows\syswow64\msvcp_win.dll, address range [0x75a40000-0x75abbfff] 
+Loaded module: c:\windows\syswow64\ucrtbase.dll, address range [0x75080000-0x7519efff] 
+Loaded module: c:\windows\syswow64\msvcp140d.dll, address range [0xdf0000-0xea6fff] 
+Loaded module: c:\windows\syswow64\imm32.dll, address range [0x754a0000-0x754c4fff], minimal analysis 
+Loaded module: c:\program files (x86)\intelswtools\inspector 2019\bin32\runtime\libittnotify.dll, address range [0x799b0000-0x799dcfff], minimal analysis 
+Loaded module: c:\windows\syswow64\kernel.appcore.dll, address range [0x755e0000-0x755eefff] 
+Loaded module: c:\windows\syswow64\msvcrt.dll, address range [0x75c30000-0x75ceefff] 
+Loaded module: c:\windows\syswow64\rpcrt4.dll, address range [0x76ca0000-0x76d5afff] 
+Loaded module: c:\windows\syswow64\sspicli.dll, address range [0x75060000-0x7507ffff], minimal analysis 
+Loaded module: c:\windows\syswow64\cryptbase.dll, address range [0x75050000-0x75059fff] 
+Loaded module: c:\windows\syswow64\bcryptprimitives.dll, address range [0x75580000-0x755defff], minimal analysis 
+Loaded module: c:\windows\syswow64\sechost.dll, address range [0x75250000-0x752c5fff] 
+Process c:\users\����\desktop\ips\task2\project\����� �����\project\task\debug\task.exe exited with code 0. Leak analysis starting. Please wait... 
+Unloaded module: C:\Users\Ната\Desktop\IPS\task2\project\Новая папка\project\task\Debug\Task.exe 
+Unloaded module: C:\Windows\SysWOW64\kernel32.dll 
+Unloaded module: C:\Windows\SysWOW64\KernelBase.dll 
+Unloaded module: C:\Windows\SysWOW64\ntdll.dll 
+Unloaded module: C:\Windows\SysWOW64\vcruntime140d.dll 
+Unloaded module: C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019.5.281\windows\redist\ia32_win\compiler\cilkrts20.dll 
+Unloaded module: C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019.5.281\windows\redist\ia32_win\compiler\libmmdd.dll 
+Unloaded module: C:\Windows\SysWOW64\ucrtbased.dll 
+Unloaded module: C:\Windows\SysWOW64\user32.dll 
+Unloaded module: C:\Windows\SysWOW64\win32u.dll 
+Unloaded module: C:\Windows\SysWOW64\gdi32.dll 
+Unloaded module: C:\Windows\SysWOW64\gdi32full.dll 
+Unloaded module: C:\Windows\SysWOW64\msvcp_win.dll 
+Unloaded module: C:\Windows\SysWOW64\ucrtbase.dll 
+Unloaded module: C:\Windows\SysWOW64\msvcp140d.dll 
+Unloaded module: C:\Windows\SysWOW64\imm32.dll 
+Unloaded module: C:\Program Files (x86)\IntelSWTools\Inspector 2019\bin32\runtime\libittnotify.dll 
+Unloaded module: C:\Windows\SysWOW64\kernel.appcore.dll 
+Unloaded module: C:\Windows\SysWOW64\msvcrt.dll 
+Unloaded module: C:\Windows\SysWOW64\rpcrt4.dll 
+Unloaded module: C:\Windows\SysWOW64\sspicli.dll 
+Unloaded module: C:\Windows\SysWOW64\cryptbase.dll 
+Unloaded module: C:\Windows\SysWOW64\bcryptprimitives.dll 
+Unloaded module: C:\Windows\SysWOW64\sechost.dll 
+Completed analysis for c:\users\����\desktop\ips\task2\project\����� �����\project\task\debug\task.exe 
+Application exit code: 0 
+Result file: C:\Users\Ната\Desktop\IPS\task2\project\Новая папка\project\task\My Inspector Results - Task\r002mi2\r002mi2.inspxe 
+Analysis completed
+=== End: [2020/05/20 18:19:39] === 

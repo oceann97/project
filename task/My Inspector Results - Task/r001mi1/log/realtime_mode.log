@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feedback>
+ <message severity="info">Analysis started...</message>
+ <nop/>
+ <message severity="info">Result file: C:\Users\Ната\Desktop\IPS\task2\project\Новая папка\project\task\My Inspector Results - Task\r001mi1\r001mi1.inspxe </message>
+ <nop/>
+ <message severity="info">Analysis started for c:\users\����\desktop\ips\task2\project\����� �����\project\task\debug\task.exe (pid = 14356) </message>
+ <nop/>
+ <message severity="info">Loaded module: c:\users\Ната\desktop\ips\task2\project\Новая папка\project\task\debug\task.exe, address range [0xaf0000-0xb1afff] </message>
+ <nop/>
+ <message severity="info">Loaded module: c:\windows\syswow64\kernel32.dll, address range [0x755f0000-0x756cffff], minimal analysis </message>
+ <nop/>
+ <message severity="info">Loaded module: c:\windows\syswow64\kernelbase.dll, address range [0x75840000-0x75a3dfff], minimal analysis </message>
+ <nop/>
+ <message severity="info">Loaded module: c:\windows\syswow64\ntdll.dll, address range [0x77890000-0x77a29fff], minimal analysis </message>
+ <nop/>
+ <message severity="info">Loaded module: c:\program files (x86)\intelswtools\inspector 2019\bin32\dnclrprofinfo.dll, address range [0x793f0000-0x79414fff] </message>
+ <nop/>
+ <message severity="info">Loaded module: c:\windows\syswow64\msvcp140d.dll, address range [0x3e70000-0x3f26fff] </message>
+ <nop/>
+ <message severity="info">Loaded module: c:\program files (x86)\intelswtools\compilers_and_libraries_2019.5.281\windows\redist\ia32_win\compiler\libmmdd.dll, address range [0x7b750000-0x7bbcffff] </message>
+ <nop/>
+ <message severity="info">Loaded module: c:\program files (x86)\intelswtools\compilers_and_libraries_2019.5.281\windows\redist\ia32_win\compiler\cilkrts20.dll, address range [0x7bbd0000-0x7bc17fff], minimal analysis </message>
+ <nop/>
+ <message severity="info">Loaded module: c:\windows\syswow64\user32.dll, address range [0x763f0000-0x76586fff], minimal analysis </message>
+ <nop/>
+ <message severity="info">Loaded module: c:\windows\syswow64\win32u.dll, address range [0x76e00000-0x76e16fff] </message>
+ <nop/>
+ <message severity="info">Loaded module: c:\windows\syswow64\gdi32.dll, address range [0x75430000-0x75450fff], minimal analysis </message>
+ <nop/>
+ <message severity="info">Loaded module: c:\windows\syswow64\gdi32full.dll, address range [0x774f0000-0x77649fff], minimal analysis </message>
+ <nop/>
+ <message severity="info">Loaded module: c:\windows\syswow64\msvcp_win.dll, address range [0x75a40000-0x75abbfff] </message>
+ <nop/>
+ <message severity="info">Loaded module: c:\windows\syswow64\ucrtbase.dll, address range [0x75080000-0x7519efff] </message>
+ <nop/>
+ <message severity="info">Loaded module: c:\windows\syswow64\vcruntime140d.dll, address range [0x7bc20000-0x7bc3cfff] </message>
+ <nop/>
+ <message severity="info">Loaded module: c:\windows\syswow64\ucrtbased.dll, address range [0x795e0000-0x79754fff] </message>
+ <nop/>
+ <message severity="info">Loaded module: c:\windows\syswow64\imm32.dll, address range [0x754a0000-0x754c4fff], minimal analysis </message>
+ <nop/>
+ <message severity="info">Loaded module: c:\program files (x86)\intelswtools\inspector 2019\bin32\runtime\libittnotify.dll, address range [0x799b0000-0x799dcfff], minimal analysis </message>
+ <nop/>
+ <message severity="info">Loaded module: c:\windows\syswow64\kernel.appcore.dll, address range [0x755e0000-0x755eefff] </message>
+ <nop/>
+ <message severity="info">Loaded module: c:\windows\syswow64\msvcrt.dll, address range [0x75c30000-0x75ceefff], minimal analysis </message>
+ <nop/>
+ <message severity="info">Loaded module: c:\windows\syswow64\rpcrt4.dll, address range [0x76ca0000-0x76d5afff], minimal analysis </message>
+ <nop/>
+ <message severity="info">Loaded module: c:\windows\syswow64\sspicli.dll, address range [0x75060000-0x7507ffff], minimal analysis </message>
+ <nop/>
+ <message severity="info">Loaded module: c:\windows\syswow64\cryptbase.dll, address range [0x75050000-0x75059fff], minimal analysis </message>
+ <nop/>
+ <message severity="info">Loaded module: c:\windows\syswow64\bcryptprimitives.dll, address range [0x75580000-0x755defff], minimal analysis </message>
+ <nop/>
+ <message severity="info">Loaded module: c:\windows\syswow64\sechost.dll, address range [0x75250000-0x752c5fff] </message>
+ <nop/>
+ <message severity="info">Process c:\users\����\desktop\ips\task2\project\����� �����\project\task\debug\task.exe exited with code 0. Leak analysis starting. Please wait... </message>
+ <nop/>
+ <message severity="info">Completed analysis for c:\users\����\desktop\ips\task2\project\����� �����\project\task\debug\task.exe </message>
+ <nop/>
+ <message severity="info">Application exit code: 0 </message>
+ <nop/>
+ <message severity="info">Result file: C:\Users\Ната\Desktop\IPS\task2\project\Новая папка\project\task\My Inspector Results - Task\r001mi1\r001mi1.inspxe </message>
+ <nop/>
+ <message severity="info">Analysis completed</message>
+ <nop/>
+</feedback>

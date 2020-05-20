@@ -1,0 +1,22 @@
+-r
+C:\Users\Ната\Desktop\IPS\task2\project\Новая папка\project\task\My Inspector Results - Task\r006ti2
+--check-deadlock
+--check-potential-deadlock
+--save-stack-on-lock-creation
+--check-datarace
+--no-terminate-on-deadlock
+--resolution=standard
+--no-check-stack-access
+--stack-depth=1
+--sampling-budget=5
+--1cell-mode=last-write
+--tool=tclcore
+--no-save-stack-on-first-access
+--save-stack-on-allocation
+--check-cross-thread-stack-access
+--no-emit-ctsa-diagnostics
+--no-close-console
+--mrte-mode=auto
+--heartbeat=1
+--
+C:\Users\Ната\Desktop\IPS\task2\project\Новая папка\project\task\Debug\Task.exe

@@ -7,17 +7,17 @@
 
 ////Ќужно переместить в с файл  иначе LNK2005
 /// вектор, содержащий box-ы, €вл€ющиес€ частью рабочего пространства
-std::vector<Box> solution;
+/*std::vector<Box> solution;
 /// вектор, содержащий box-ы, не €вл€ющиес€ частью рабочего пространства
 std::vector<Box> not_solution;
 /// вектор, содержащий box-ы, наход€щиес€ на границе между "рабочим" и "нерабочим" пространством
 std::vector<Box> boundary;
 /// вектор, хран€щий box-ы, анализируемые на следующей итерации алгоритма
-std::vector<Box> temporary_boxes;
-/*cilk::reducer<cilk::op_vector<Box>> solution;
+std::vector<Box> temporary_boxes;*/
+cilk::reducer<cilk::op_vector<Box>> solution;
 cilk::reducer<cilk::op_vector<Box>> not_solution;
 cilk::reducer<cilk::op_vector<Box>> boundary;
-cilk::reducer<cilk::op_vector<Box>> temporary_boxes;*/
+cilk::reducer<cilk::op_vector<Box>> temporary_boxes;
 
 
 /// функции gj()
@@ -174,10 +174,10 @@ void low_level_fragmentation::GetBoxType(const Box& box)
 	int box_type = ClasifyBox(vects);
 	switch (box_type) {
 	case 4:
-		solution.push_back(box);
+		solution->push_back(box);
 		break;
 	case 5:
-		not_solution.push_back(box);
+		not_solution->push_back(box);
 		break;
 	case 6:
 	{
@@ -185,13 +185,13 @@ void low_level_fragmentation::GetBoxType(const Box& box)
 		GetNewBoxes(box, new_boxes);//Create new boxes from box
 		if (new_boxes.first.GetDiagonal() < g_precision) {
 			//Add to boundary
-			boundary.push_back(new_boxes.first);
-			boundary.push_back(new_boxes.second);
+			boundary->push_back(new_boxes.first);
+			boundary->push_back(new_boxes.second);
 		}
 		else {
 			//Add to futher analysis
-			temporary_boxes.push_back(new_boxes.first);
-			temporary_boxes.push_back(new_boxes.second);
+			temporary_boxes->push_back(new_boxes.first);
+			temporary_boxes->push_back(new_boxes.second);
 		}
 		break;
 	}
@@ -283,34 +283,7 @@ void high_level_analysis::GetMinMax( const Box& box, min_max_vectors& min_max_ve
 
 //------------------------------------------------------------------------------------------
 //  ‘ункци€ GetSolution() запускает алгоритм нахождени€ рабочей области манипул€тора
-void high_level_analysis::GetSolution()
-{
-	double diagonal = current_box.GetDiagonal();
-	std::cout << "diagonal: "<< diagonal << std::endl;
-	if (diagonal <= g_precision) solution.push_back(current_box);
-	else {
-		temporary_boxes.push_back(current_box);
-		while (diagonal > g_precision) {
-			int node_size = temporary_boxes.size();
-			//std::cout << "node size: " << node_size << std::endl;
-			cilk_for (int j = 0; j < node_size; j++) {
-				GetBoxType(temporary_boxes.at(j));
-			}
-			std::cout << "temporary boxes number: "<<temporary_boxes.size() << std::endl;
-			temporary_boxes.erase(temporary_boxes.begin(), temporary_boxes.begin() + node_size);
-			if (!temporary_boxes.empty()) {
-				diagonal = temporary_boxes.at(0).GetDiagonal();
-				std::cout << "diagonal: "<< diagonal << std::endl;
-			}
-			else 
-				return;
-		}
-	}
-}
-
-/*cilk::reducer<cilk::op_vector<Box>> temporary_boxes_par;
-
-void high_level_analysis::GetSolution()
+/*void high_level_analysis::GetSolution()
 {
 	double diagonal = current_box.GetDiagonal();
 	std::cout << "diagonal: " << diagonal << std::endl;
@@ -320,11 +293,9 @@ void high_level_analysis::GetSolution()
 		while (diagonal > g_precision) {
 			int node_size = temporary_boxes.size();
 			//std::cout << "node size: " << node_size << std::endl;
-			temporary_boxes_par.move_in(temporary_boxes) ;
-			cilk_for (int j = 0; j < node_size; j++) {
-				GetBoxType(temporary_boxes_par);
+			cilk_for(int j = 0; j < node_size; j++) {
+				GetBoxType(temporary_boxes.at(j));
 			}
-			temporary_boxes_par.move_out(temporary_boxes);
 			std::cout << "temporary boxes number: " << temporary_boxes.size() << std::endl;
 			temporary_boxes.erase(temporary_boxes.begin(), temporary_boxes.begin() + node_size);
 			if (!temporary_boxes.empty()) {
@@ -337,48 +308,74 @@ void high_level_analysis::GetSolution()
 	}
 }*/
 
+
+void high_level_analysis::GetSolution()
+{
+	current_box = Box(-g_l1_max, 0, g_l2_max + g_l0 + g_l1_max, __min(g_l1_max, g_l2_max));
+	std::vector<Box> current_boxes;
+	temporary_boxes->push_back(current_box);
+	std::vector<Box> test;
+
+	int level = FindTreeDepth();
+
+	for (int i = 0; i < (level + 1); ++i)
+	{
+		//current_boxes = temporary_boxes;
+		//temporary_boxes = test;
+		temporary_boxes.move_out(current_boxes);
+		temporary_boxes.set_value(test);
+		for(int j = 0; j < current_boxes.size(); ++j)
+			GetBoxType(current_boxes[j]);
+	}
+}
+
 //------------------------------------------------------------------------------------------
 // ‘ункци€ WriteResults() записывает параметры полученных box-ов (относ€щихс€ к рабочему
 // пространству, к граничной области и ко множеству, не €вл€ющемус€ решением) в выходные 
 //файлы дл€ дальнейшей визуализации
 void WriteResults( const char* file_names[] )
 {
+	std::vector <Box> temp;
 	std::ofstream out;    // ѕоток записи
 	out.open(file_names[0]); // ќткрытие файла 0 дл€ записи
 	double x_min, y_min, width, height;
 	Box tmp_box;
+	solution.move_out(temp);
 	if (out.is_open())
 	{
-		for (int i = 0; i < solution.size(); i++)
+		for (int i = 0; i < temp.size(); i++)
 		{
-			tmp_box = solution.at(i); //вектор, содержащий box - ы, €вл€ющиес€ частью рабочего пространства
+			tmp_box = temp.at(i); //вектор, содержащий box - ы, €вл€ющиес€ частью рабочего пространства
 			tmp_box.GetParameters(x_min, y_min, width, height);
 			out << x_min << " " << y_min << " " << width << " " << height << std::endl;
 		}
 	}
-
+	temp.clear();
 	std::cout << std::endl;
 	out.close();//«акрыть файловый поток
 
 	out.open(file_names[1]); // ќткрытие файла 1 дл€ записи
+	boundary.move_out(temp);
 	if (out.is_open())
 	{
-		for (int i = 0; i < not_solution.size(); i++)
+		for (int i = 0; i < temp.size(); i++)
 		{
-			tmp_box = not_solution.at(i);// вектор, содержащий box-ы, не €вл€ющиес€ частью рабочего пространства
+			tmp_box = temp.at(i);// вектор, содержащий box-ы, не €вл€ющиес€ частью рабочего пространства
 			tmp_box.GetParameters(x_min, y_min, width, height);
 			out << x_min << " " << y_min << " " << width << " " << height << std::endl;
 		}
 	}
+	temp.clear();
 	std::cout << std::endl;
 	out.close();//«акрыть файловый поток
 
 	out.open(file_names[2]); // ќткрытие файла 2 дл€ записи
+	not_solution.move_out(temp);
 	if (out.is_open())
 	{
-		for (int i = 0; i < boundary.size(); i++)
+		for (int i = 0; i < temp.size(); i++)
 		{
-			tmp_box = boundary.at(i);// вектор, содержащий box-ы, наход€щиес€ на границе между "рабочим" и "нерабочим" пространством
+			tmp_box = temp.at(i);// вектор, содержащий box-ы, наход€щиес€ на границе между "рабочим" и "нерабочим" пространством
 			tmp_box.GetParameters(x_min, y_min, width, height);
 			out << x_min << " " << y_min << " " << width << " " << height << std::endl;
 		}

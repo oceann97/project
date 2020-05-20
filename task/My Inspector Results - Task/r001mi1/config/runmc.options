@@ -1,0 +1,17 @@
+-r
+C:\Users\Ната\Desktop\IPS\task2\project\Новая папка\project\task\My Inspector Results - Task\r001mi1
+--no-access-checks
+--no-analyze-stack
+--leak-maximum=100000
+--leak-check-only
+--leak-check-on-exit
+--check-resource-leaks
+--leak-check-report-reachable
+--freelist-vol=0
+--guard-zone-size=0
+--stack-depth=8
+--no-close-console
+--mrte-mode=auto
+--heartbeat=1
+--
+C:\Users\Ната\Desktop\IPS\task2\project\Новая папка\project\task\Debug\Task.exe

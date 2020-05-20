@@ -1,0 +1,60 @@
+
+=== Start: [2020/05/20 18:37:53] === 
+Analysis started...
+Result file: C:\Users\Ната\Desktop\IPS\task2\project\Новая папка\project\task\My Inspector Results - Task\r006ti2\r006ti2.inspxe 
+Found target process c:\users\Ната\desktop\ips\task2\project\Новая папка\project\task\debug\task.exe (PID = 12604). Analysis started... 
+Loaded module: c:\users\Ната\desktop\ips\task2\project\Новая папка\project\task\debug\task.exe. 
+Loaded module: c:\windows\syswow64\kernel32.dll. 
+Loaded module: c:\windows\syswow64\kernelbase.dll. 
+Loaded module: c:\windows\syswow64\ntdll.dll. 
+Loaded module: c:\windows\syswow64\msvcp140d.dll. 
+Loaded module: c:\windows\syswow64\vcruntime140d.dll. 
+Loaded module: c:\program files (x86)\intelswtools\compilers_and_libraries_2019.5.281\windows\redist\ia32_win\compiler\cilkrts20.dll. 
+Loaded module: c:\program files (x86)\intelswtools\compilers_and_libraries_2019.5.281\windows\redist\ia32_win\compiler\libmmdd.dll. 
+Loaded module: c:\windows\syswow64\ucrtbased.dll. 
+Loaded module: c:\windows\syswow64\ucrtbased.dll. 
+Unloaded module: c:\windows\syswow64\ucrtbased.dll. 
+Loaded module: c:\windows\syswow64\user32.dll. 
+Loaded module: c:\windows\syswow64\win32u.dll. 
+Loaded module: c:\windows\syswow64\gdi32.dll. 
+Loaded module: c:\windows\syswow64\gdi32full.dll. 
+Loaded module: c:\windows\syswow64\msvcp_win.dll. 
+Loaded module: c:\windows\syswow64\ucrtbase.dll. 
+Loaded module: c:\windows\syswow64\imm32.dll. 
+Loaded module: c:\program files (x86)\intelswtools\inspector 2019\bin32\runtime\libittnotify.dll. 
+Loaded module: c:\windows\syswow64\kernel.appcore.dll. 
+Loaded module: c:\windows\syswow64\msvcrt.dll. 
+Loaded module: c:\windows\syswow64\rpcrt4.dll. 
+Loaded module: c:\windows\syswow64\sspicli.dll. 
+Loaded module: c:\windows\syswow64\cryptbase.dll. 
+Loaded module: c:\windows\syswow64\bcryptprimitives.dll. 
+Loaded module: c:\windows\syswow64\sechost.dll. 
+Unloaded module: c:\users\Ната\desktop\ips\task2\project\Новая папка\project\task\debug\task.exe. 
+Unloaded module: c:\windows\syswow64\kernel32.dll. 
+Unloaded module: c:\windows\syswow64\kernelbase.dll. 
+Unloaded module: c:\windows\syswow64\ntdll.dll. 
+Unloaded module: c:\windows\syswow64\msvcp140d.dll. 
+Unloaded module: c:\windows\syswow64\vcruntime140d.dll. 
+Unloaded module: c:\program files (x86)\intelswtools\compilers_and_libraries_2019.5.281\windows\redist\ia32_win\compiler\cilkrts20.dll. 
+Unloaded module: c:\program files (x86)\intelswtools\compilers_and_libraries_2019.5.281\windows\redist\ia32_win\compiler\libmmdd.dll. 
+Unloaded module: c:\windows\syswow64\ucrtbased.dll. 
+Unloaded module: c:\windows\syswow64\user32.dll. 
+Unloaded module: c:\windows\syswow64\win32u.dll. 
+Unloaded module: c:\windows\syswow64\gdi32.dll. 
+Unloaded module: c:\windows\syswow64\gdi32full.dll. 
+Unloaded module: c:\windows\syswow64\msvcp_win.dll. 
+Unloaded module: c:\windows\syswow64\ucrtbase.dll. 
+Unloaded module: c:\windows\syswow64\imm32.dll. 
+Unloaded module: c:\program files (x86)\intelswtools\inspector 2019\bin32\runtime\libittnotify.dll. 
+Unloaded module: c:\windows\syswow64\kernel.appcore.dll. 
+Unloaded module: c:\windows\syswow64\msvcrt.dll. 
+Unloaded module: c:\windows\syswow64\rpcrt4.dll. 
+Unloaded module: c:\windows\syswow64\sspicli.dll. 
+Unloaded module: c:\windows\syswow64\cryptbase.dll. 
+Unloaded module: c:\windows\syswow64\bcryptprimitives.dll. 
+Unloaded module: c:\windows\syswow64\sechost.dll. 
+Process c:\users\Ната\desktop\ips\task2\project\Новая папка\project\task\debug\task.exe (PID = 12604) has terminated. 
+Application exit code: 0 
+Result file: C:\Users\Ната\Desktop\IPS\task2\project\Новая папка\project\task\My Inspector Results - Task\r006ti2\r006ti2.inspxe 
+Analysis completed
+=== End: [2020/05/20 18:38:10] === 

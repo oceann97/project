@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<snippets>
+  <file name="C:\Users\Ната\Desktop\IPS\task2\project\Новая папка\project\task\NUCovering.cpp" md5="9e321db12d4719bca92d95c311dd3843">
+    <snippet line="39">
+      <line line="36"/>
+      <line line="37">    std::chrono::duration&lt;double&gt; duration1 = (t2 - t1);</line>
+      <line line="38">    std::cout &lt;&lt;  "Duration is " &lt;&lt; duration1.count() &lt;&lt; " seconds";</line>
+      <line line="39"/>
+      <line line="40">    const char* out_files[3] = { "D:\\solution_box.txt", "D:\\not_solution_box.txt", "D:\\boundary_box.txt" };</line>
+    </snippet>
+  </file>
+</snippets>

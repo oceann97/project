@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feedback>
+ <message severity="info">Analysis started...</message>
+ <nop/>
+ <message severity="info">Result file: C:\Users\Ната\Desktop\IPS\task2\project\Новая папка\project\task\My Inspector Results - Task\r007ti3\r007ti3.inspxe </message>
+ <nop/>
+ <message severity="info">Found target process c:\users\Ната\desktop\ips\task2\project\Новая папка\project\task\debug\task.exe (PID = 7220). Analysis started... </message>
+ <nop/>
+ <message severity="info">Loaded module: c:\users\Ната\desktop\ips\task2\project\Новая папка\project\task\debug\task.exe. </message>
+ <nop/>
+ <message severity="info">Loaded module: c:\windows\syswow64\kernel32.dll. </message>
+ <nop/>
+ <message severity="info">Loaded module: c:\windows\syswow64\kernelbase.dll. </message>
+ <nop/>
+ <message severity="info">Loaded module: c:\windows\syswow64\ntdll.dll. </message>
+ <nop/>
+ <message severity="info">Loaded module: c:\windows\syswow64\msvcp140d.dll. </message>
+ <nop/>
+ <message severity="info">Loaded module: c:\windows\syswow64\vcruntime140d.dll. </message>
+ <nop/>
+ <message severity="info">Loaded module: c:\program files (x86)\intelswtools\compilers_and_libraries_2019.5.281\windows\redist\ia32_win\compiler\libmmdd.dll. </message>
+ <nop/>
+ <message severity="info">Loaded module: c:\program files (x86)\intelswtools\compilers_and_libraries_2019.5.281\windows\redist\ia32_win\compiler\cilkrts20.dll. </message>
+ <nop/>
+ <message severity="info">Loaded module: c:\windows\syswow64\ucrtbased.dll. </message>
+ <nop/>
+ <message severity="info">Loaded module: c:\windows\syswow64\user32.dll. </message>
+ <nop/>
+ <message severity="info">Loaded module: c:\windows\syswow64\win32u.dll. </message>
+ <nop/>
+ <message severity="info">Loaded module: c:\windows\syswow64\gdi32.dll. </message>
+ <nop/>
+ <message severity="info">Loaded module: c:\windows\syswow64\gdi32full.dll. </message>
+ <nop/>
+ <message severity="info">Loaded module: c:\windows\syswow64\msvcp_win.dll. </message>
+ <nop/>
+ <message severity="info">Loaded module: c:\windows\syswow64\ucrtbase.dll. </message>
+ <nop/>
+ <message severity="info">Loaded module: c:\windows\syswow64\imm32.dll. </message>
+ <nop/>
+ <message severity="info">Loaded module: c:\program files (x86)\intelswtools\inspector 2019\bin32\runtime\libittnotify.dll. </message>
+ <nop/>
+ <message severity="info">Loaded module: c:\windows\syswow64\kernel.appcore.dll. </message>
+ <nop/>
+ <message severity="info">Loaded module: c:\windows\syswow64\msvcrt.dll. </message>
+ <nop/>
+ <message severity="info">Loaded module: c:\windows\syswow64\rpcrt4.dll. </message>
+ <nop/>
+ <message severity="info">Loaded module: c:\windows\syswow64\sspicli.dll. </message>
+ <nop/>
+ <message severity="info">Loaded module: c:\windows\syswow64\cryptbase.dll. </message>
+ <nop/>
+ <message severity="info">Loaded module: c:\windows\syswow64\bcryptprimitives.dll. </message>
+ <nop/>
+ <message severity="info">Loaded module: c:\windows\syswow64\sechost.dll. </message>
+ <nop/>
+ <message severity="info">Unloaded module: c:\users\Ната\desktop\ips\task2\project\Новая папка\project\task\debug\task.exe. </message>
+ <nop/>
+ <message severity="info">Unloaded module: c:\windows\syswow64\kernel32.dll. </message>
+ <nop/>
+ <message severity="info">Unloaded module: c:\windows\syswow64\kernelbase.dll. </message>
+ <nop/>
+ <message severity="info">Unloaded module: c:\windows\syswow64\ntdll.dll. </message>
+ <nop/>
+ <message severity="info">Unloaded module: c:\windows\syswow64\msvcp140d.dll. </message>
+ <nop/>
+ <message severity="info">Unloaded module: c:\windows\syswow64\vcruntime140d.dll. </message>
+ <nop/>
+ <message severity="info">Unloaded module: c:\program files (x86)\intelswtools\compilers_and_libraries_2019.5.281\windows\redist\ia32_win\compiler\libmmdd.dll. </message>
+ <nop/>
+ <message severity="info">Unloaded module: c:\program files (x86)\intelswtools\compilers_and_libraries_2019.5.281\windows\redist\ia32_win\compiler\cilkrts20.dll. </message>
+ <nop/>
+ <message severity="info">Unloaded module: c:\windows\syswow64\ucrtbased.dll. </message>
+ <nop/>
+ <message severity="info">Unloaded module: c:\windows\syswow64\user32.dll. </message>
+ <nop/>
+ <message severity="info">Unloaded module: c:\windows\syswow64\win32u.dll. </message>
+ <nop/>
+ <message severity="info">Unloaded module: c:\windows\syswow64\gdi32.dll. </message>
+ <nop/>
+ <message severity="info">Unloaded module: c:\windows\syswow64\gdi32full.dll. </message>
+ <nop/>
+ <message severity="info">Unloaded module: c:\windows\syswow64\msvcp_win.dll. </message>
+ <nop/>
+ <message severity="info">Unloaded module: c:\windows\syswow64\ucrtbase.dll. </message>
+ <nop/>
+ <message severity="info">Unloaded module: c:\windows\syswow64\imm32.dll. </message>
+ <nop/>
+ <message severity="info">Unloaded module: c:\program files (x86)\intelswtools\inspector 2019\bin32\runtime\libittnotify.dll. </message>
+ <nop/>
+ <message severity="info">Unloaded module: c:\windows\syswow64\kernel.appcore.dll. </message>
+ <nop/>
+ <message severity="info">Unloaded module: c:\windows\syswow64\msvcrt.dll. </message>
+ <nop/>
+ <message severity="info">Unloaded module: c:\windows\syswow64\rpcrt4.dll. </message>
+ <nop/>
+ <message severity="info">Unloaded module: c:\windows\syswow64\sspicli.dll. </message>
+ <nop/>
+ <message severity="info">Unloaded module: c:\windows\syswow64\cryptbase.dll. </message>
+ <nop/>
+ <message severity="info">Unloaded module: c:\windows\syswow64\bcryptprimitives.dll. </message>
+ <nop/>
+ <message severity="info">Unloaded module: c:\windows\syswow64\sechost.dll. </message>
+ <nop/>
+ <message severity="info">Process c:\users\Ната\desktop\ips\task2\project\Новая папка\project\task\debug\task.exe (PID = 7220) has terminated. </message>
+ <nop/>
+ <message severity="info">Application exit code: 0 </message>
+ <nop/>
+ <message severity="info">Result file: C:\Users\Ната\Desktop\IPS\task2\project\Новая папка\project\task\My Inspector Results - Task\r007ti3\r007ti3.inspxe </message>
+ <nop/>
+ <message severity="info">Analysis completed</message>
+ <nop/>
+</feedback>
